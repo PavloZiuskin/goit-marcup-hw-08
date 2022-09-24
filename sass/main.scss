@@ -1,0 +1,61 @@
+// Utilites and base section, container stily
+@import './utiles/vars';
+@import './utiles/reset';
+@import './base/base';
+@import './components/section';
+@import './components/container';
+@import './base/visually-hidden';
+
+//BTN
+@import './components/btn';
+
+// LOGO
+@import './layout/logo';
+
+//HEADER
+ @import './layout/header';
+ @import './components/nav';
+ @import './components/site-nav';
+ @import './components/contacts';
+
+
+//  HERO
+@import './layout/hero';
+
+// ADVANTAGE
+@import './layout/advantage';
+
+// WORK
+@import './components/work-code-img';
+
+// TEAM
+@import './layout/team';
+@import './components/card-container';
+@import './components/social-link';
+
+// COMPANY
+@import './layout/company';
+
+// FOOTER
+@import './layout/footer';
+@import './components/addresses';
+@import './components/social-footer-container';
+@import './layout/footer-form';
+
+
+// MODAL POLICY WINDOW
+@import './components/bacdroup';
+@import './components/btn-close';
+@import './components/form-modal';
+@import './components/policy-form';
+
+// STYLE PAGE 2
+@import './components/page-2/filter';
+@import './components/page-2/portfolio';
+
+
+
+
+
+
+

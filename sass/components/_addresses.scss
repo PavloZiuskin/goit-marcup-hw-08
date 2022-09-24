@@ -1,0 +1,34 @@
+.add {
+  display: block;
+}
+
+.addres__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.addres__contacts-link {
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-rgba-coor);
+  transition: color var(--animation-fast);
+
+    &:hover,
+    &:focus {
+        color: var(--acsent-text-color);
+    }
+}
+
+.addres__link {
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+  transition: color var(--animation-fast);
+    &:hover,
+    &:focus {
+        color: var(--acsent-text-color);
+    }
+}

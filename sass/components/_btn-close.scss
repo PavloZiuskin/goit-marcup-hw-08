@@ -1,0 +1,37 @@
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.btn-close__cross {
+  background-color: #fff;
+  outline: none;
+  object-fit: contain;
+}
+
+.btn-close__ress {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: fill var(--animation-fast);
+    .btn-close:hover
+        > .btn-close__cross
+        &
+        .btn-close:focus
+        > .btn-close__cross
+        & {
+        fill: var(--main-btn-bgc);
+    }
+}

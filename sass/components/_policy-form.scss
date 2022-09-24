@@ -1,0 +1,36 @@
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+
+.unchecked {
+  opacity: 1;
+  transition: opacity var(--animation-fast);
+  .visually-hidden:checked + .policy__svg & {
+    opacity: 0;
+  }
+}
+
+.checked {
+  opacity: 0;
+  transition: opacity var(--animation-fast);
+  .visually-hidden:checked + .policy__svg & {
+    opacity: 1;
+  }
+}
+
+.policy__span {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.policy__link {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--acsent-text-color);
+}

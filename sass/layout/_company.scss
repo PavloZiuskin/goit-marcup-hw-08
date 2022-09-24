@@ -1,0 +1,29 @@
+.company {
+  display: flex;
+  gap: var(--card-gap);
+}
+
+.company__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border var(--animation-fast);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--card-main-bgc-color);
+  }
+}
+
+.company__socials {
+  transition: fill var(--animation-fast);
+  .company__link:hover &,
+  .company__link:focus & {
+    fill: var(--card-main-bgc-color);
+  }
+}

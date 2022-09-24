@@ -1,0 +1,37 @@
+:root {
+    /* Fonts */
+    --main-fonts: "Roboto", sans-serif;
+    --secondary-fonts: "Raleway", sans-serif;
+    /* Color text */
+    --main-text-color: #212121;
+    --acsent-text-color: #2196f3;
+    --blak-text-color: #000000;
+    --white-text-color: #ffffff;
+    --secondary-text-color: #757575;
+    --footer-rgba-coor: rgba(255, 255, 255, 0.6);
+
+    /* Color bgc */
+    --main-bgc-color: #ffffff;
+    --foot-bgc-color: #2f303a;
+    --card-main-bgc-color: #2196f3;
+
+    /* Outher var */
+    --card-gap: 30px;
+
+    /* BTN */
+    --acsent-btn-color: #212121;
+    --main-btn-color: #ffffff;
+    --acsent-btn-bgc: #f5f4fa;
+    --main-btn-bgc: #2196f3;
+    /* border */
+    --main-border-color: #eeeeee;
+    --secondary-border-color: #2196f3;
+    /* SVG */
+    --main-svg-color: #afb1b8;
+    /* anim */
+    --animation-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* BOX_SHADOW */
+    --main-box-shadow: var(--main-box-shadow);
+    --second-box-shadow: rgba(0, 0, 0, 0.12);
+}
