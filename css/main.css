@@ -67,15 +67,15 @@ ul {
   padding-bottom: 94px;
 }
 
-.section--ounather-bgc {
+.section--other-bgc {
   background-color: var(--acsent-btn-bgc);
 }
 
-.section--no-pt {
+.section--no-padding-top {
   padding-top: 0;
 }
 
-.section-title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -158,33 +158,6 @@ ul {
   padding-right: 32px;
 }
 
-.filter-button {
-  display: inline-block;
-  min-width: 73px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-  border: 0;
-  border-radius: 4px;
-  background-color: var(--acsent-btn-bgc);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--acsent-btn-color);
-  cursor: pointer;
-  transition: background-color var(--animation-fast), color var(--animation-fast), box-shadow var(--animation-fast), border-radius var(--animation-fast);
-}
-.filter-button:active, .filter-button:focus, .filter-button:hover {
-  background-color: var(--main-btn-bgc);
-  color: var(--main-btn-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px var(--second-box-shadow);
-  border-radius: 4px;
-}
-
 .form__btn {
   display: block;
   margin: 0;
@@ -217,7 +190,7 @@ ul {
   color: var(--acsent-text-color);
 }
 
-.logo--mr-93 {
+.logo__header {
   margin-right: 93px;
 }
 
@@ -234,7 +207,7 @@ ul {
   color: var(--acsent-text-color);
 }
 
-.footer-logo--mb-d {
+.footer-logo--margin-bottom-disp {
   margin-bottom: 20px;
   display: block;
 }
@@ -271,7 +244,7 @@ ul {
   align-items: center;
 }
 
-.site-nav__list {
+.site-nav {
   display: flex;
   text-align: left;
   align-items: center;
@@ -326,7 +299,7 @@ ul {
   background-color: var(--acsent-text-color);
 }
 
-.contacts__list {
+.contacts {
   display: flex;
   list-style: none;
   margin-top: 0;
@@ -406,7 +379,7 @@ ul {
   margin-right: 30px;
 }
 
-.advantage__subtitle {
+.advantage__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -484,14 +457,7 @@ ul {
   background-color: #fff;
 }
 
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.social-list__subtitle {
+.card__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -502,7 +468,7 @@ ul {
   color: var(--main-text-color);
 }
 
-.social-list__text {
+.card__text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -511,6 +477,16 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.social-list--mt20 {
+  margin-top: 20px;
 }
 
 .social-list__link {
@@ -526,15 +502,11 @@ ul {
   background-color: var(--card-main-bgc-color);
 }
 
-.social-list__socials {
+.social-list__icon {
   transition: fill var(--animation-fast);
 }
-.social-list__link:hover .social-list__socials, .social-list__link:focus .social-list__socials {
+.social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
   fill: #ffffff;
-}
-
-.social-list--mt20 {
-  margin-top: 20px;
 }
 
 .social-list__link--bgc {
@@ -568,10 +540,10 @@ ul {
   border: 1px solid var(--card-main-bgc-color);
 }
 
-.company__socials {
+.company__icon {
   transition: fill var(--animation-fast);
 }
-.company__link:hover .company__socials, .company__link:focus .company__socials {
+.company__link:hover .company__icon, .company__link:focus .company__icon {
   fill: var(--card-main-bgc-color);
 }
 
@@ -897,6 +869,33 @@ ul {
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter-button {
+  display: inline-block;
+  min-width: 73px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--acsent-btn-bgc);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--acsent-btn-color);
+  cursor: pointer;
+  transition: background-color var(--animation-fast), color var(--animation-fast), box-shadow var(--animation-fast), border-radius var(--animation-fast);
+}
+.filter-button:active, .filter-button:focus, .filter-button:hover {
+  background-color: var(--main-btn-bgc);
+  color: var(--main-btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px var(--second-box-shadow);
+  border-radius: 4px;
 }
 
 .portfolio {
