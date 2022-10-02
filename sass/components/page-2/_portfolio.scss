@@ -4,7 +4,15 @@
   gap: var(--card-gap);
 }
 .portfolio__item {
-  flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - var(--card-gap)) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--card-gap) * 2) / 3);
+  }
 }
 
 .portfolio__link {
@@ -12,6 +20,8 @@
   text-decoration: none;
   overflow: hidden;
   transition: box-shadow var(--animation-fast);
+
+  
 
   &:hover,
   &:focus {
@@ -92,4 +102,12 @@
   border-bottom: 1px solid var(--main-border-color);
 
   text-align: left;
+
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 110px;
+  }
 }

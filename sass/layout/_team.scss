@@ -1,13 +1,36 @@
 .team {
-    display: flex;
-}
+    display: block;
 
-.team__item:not(:last-child) {
-    margin-right: 30px;
+    @media  screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media  screen and (min-width: 768px) {
+        width: 738px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--card-gap);
+    }
+
+    @media  screen and (min-width: 1200px) {
+        width: 1170px;
+       
+    }
 }
 
 .team__item {
     box-shadow: 0px 1px 3px var(--second-box-shadow),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    height: 622px;
+
+    @media  screen and (min-width: 768px) {
+        width: calc((100% - var(--card-gap)) / 2) ;
+        height: 536px;
+    }
+
+    @media  screen and (min-width: 1200px) {
+        width: calc((100% - var(--card-gap) * 3) / 4) ;
+        height: 428px;
+    }
 }

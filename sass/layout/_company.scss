@@ -1,13 +1,28 @@
 .company {
   display: flex;
   gap: var(--card-gap);
+  flex-wrap: wrap;
+}
+
+.company__item {
+  flex-basis: calc((100% - var(--card-gap)) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - var(--card-gap) * 2) / 3);
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--card-gap) * 5) / 6);
+    
+  }
 }
 
 .company__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

@@ -1,15 +1,32 @@
 .code-job {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   display: flex;
 }
 
 .code-job__item {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   position: relative;
+
   &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
     margin-right: 30px;
   }
 }
 
 .code-job__subtitle {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   margin-top: 0;
   margin-bottom: 0;
 
@@ -27,4 +44,18 @@
 
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+}
+.section-title__code-job {
+  // margin-top: 0;
+  // margin-bottom: 50px;
+
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.16;
+  // text-align: center;
+  // letter-spacing: 0.03em;
+  // color: var(--main-text-color);
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
