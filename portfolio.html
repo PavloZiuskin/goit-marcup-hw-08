@@ -29,28 +29,32 @@
       <!-- NAV HEADER -->
       <div class="conteainer header__container">
         <nav class="nav">
-          <a href="index.html" class="logo logo__header "
+          <a href="index.html" class="logo logo__header"
             >Web<span class="logo__text">Studio</span></a
           >
 
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link  " href="index.html">Студія</a>
+              <a class="site-nav__link" href="index.html">Студія</a>
             </li>
 
             <li class="site-nav__item">
-              <a class="site-nav__link  site-nav__link--current" href="portfolio.html">Портфоліо</a>
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="portfolio.html"
+                >Портфоліо</a
+              >
             </li>
 
             <li class="site-nav__item">
-              <a class="site-nav__link " href="">Контакти</a>
+              <a class="site-nav__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
         <!-- CONTACTS LIST -->
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link " href="mailto:info@devstudio.com">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon icon" width="16" height="12">
                 <use href="./images/svg/icons.svg#mail"></use>
               </svg>
@@ -59,7 +63,7 @@
           </li>
 
           <li class="contacts__item">
-            <a class="contacts__link " href="tel:+380961111111">
+            <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon icon" width="10" height="16">
                 <use href="./images/svg/icons.svg#phone"></use>
               </svg>
@@ -108,13 +112,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-1.jpg"
-                    alt="Website with three employee cards on a laptop. Two women and one man"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/tehno/img_lg_@1x_result.jpg 1x, ./images/portfolio/tehno/img_lg_@2x_result.jpg 2x, ./images/portfolio/tehno/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/tehno/img_m_@1x_result.jpg 1x, ./images/portfolio/tehno/img_m_@2x_result.jpg 2x, ./images/portfolio/tehno/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/tehno/img_s_@1x_result.jpg 1x, ./images/portfolio/tehno/img_s_@2x_result.jpg 2x, ./images/portfolio/tehno/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/tehno/img_s_@1x_result.jpg"
+                      alt="Website with three employee cards on a laptop. Two women and one man"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -124,7 +140,7 @@
 
                 <div class="grid">
                   <h2 class="portfolio__subtitle">Технокряк</h2>
-                  <p class="portfolio__text ">Веб-сайт</p>
+                  <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -137,13 +153,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-2.jpg"
-                    alt="two basketball players are dribbling the ball, player golden stars warrior put a block"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/basketball/img_lg_@1x_result.jpg 1x, ./images/portfolio/basketball/img_lg_@2x_result.jpg 2x, ./images/portfolio/basketball/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/basketball/img_m_@1x_result.jpg 1x, ./images/portfolio/basketball/img_m_@2x_result.jpg 2x, ./images/portfolio/basketball/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/basketball/img_s_@1x_result.jpg 1x, ./images/portfolio/basketball/img_s_@2x_result.jpg 2x, ./images/portfolio/basketball/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/basketball/img_s_@1x_result.jpg"
+                      alt="two basketball players are dribbling the ball, player golden stars warrior put a block"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -155,7 +183,7 @@
                   <h2 class="portfolio__subtitle">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="portfolio__text ">Дизайн</p>
+                  <p class="portfolio__text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -168,13 +196,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-3.jpg"
-                    alt="restaurant logo.in the background a fish in the foreground an inscription seafood restaurant est.2001"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/seafood/img_lg_@1x_result.jpg 1x, ./images/portfolio/seafood/img_lg_@2x_result.jpg 2x, ./images/portfolio/seafood/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/seafood/img_m_@1x_result.jpg 1x, ./images/portfolio/seafood/img_m_@2x_result.jpg 2x, ./images/portfolio/seafood/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/seafood/img_s_@1x_result.jpg 1x, ./images/portfolio/seafood/img_s_@2x_result.jpg 2x, ./images/portfolio/seafood/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/seafood/img_s_@1x_result.jpg"
+                      alt="restaurant logo.in the background a fish in the foreground an inscription seafood restaurant est.2001"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -184,7 +224,7 @@
 
                 <div class="grid">
                   <h2 class="portfolio__subtitle">Ресторан Seafood</h2>
-                  <p class="portfolio__text ">Додаток</p>
+                  <p class="portfolio__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -197,13 +237,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-4.jpg"
-                    alt="headphone black"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/prime/img_lg_@1x_result.jpg 1x, ./images/portfolio/prime/img_lg_@2x_result.jpg 2x, ./images/portfolio/prime/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/prime/img_m_@1x_result.jpg 1x, ./images/portfolio/prime/img_m_@2x_result.jpg 2x, ./images/portfolio/prime/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/prime/img_s_@1x_result.jpg 1x, ./images/portfolio/prime/img_s_@2x_result.jpg 2x, ./images/portfolio/prime/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/prime/img_s_@1x_result.jpg"
+                      alt="headphone black"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -226,13 +278,27 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-5.jpg"
-                    alt="two cardboard boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/box/img_lg_@1x_result.jpg 1x, ./images/portfolio/box/img_lg_@2x_result.jpg 2x, ./images/portfolio/box/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/box/img_m_@1x_result.jpg 1x, ./images/portfolio/box/img_m_@2x_result.jpg 2x, ./images/portfolio/box/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/box/img_s_@1x_result.jpg 1x, ./images/portfolio/box/img_s_@2x_result.jpg 2x, ./images/portfolio/box/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/box/img_s_@1x_result.jpg"
+                      alt="two cardboard boxes"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -255,13 +321,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-6.jpg"
-                    alt="the site is opened on a computer"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/inspiration/img_lg_@1x_result.jpg 1x, ./images/portfolio/inspiration/img_lg_@2x_result.jpg 2x, ./images/portfolio/inspiration/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/inspiration/img_m_@1x_result.jpg 1x, ./images/portfolio/inspiration/img_m_@2x_result.jpg 2x, ./images/portfolio/inspiration/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/inspiration/img_s_@1x_result.jpg 1x, ./images/portfolio/inspiration/img_s_@2x_result.jpg 2x, ./images/portfolio/inspiration/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/inspiration/img_s_@1x_result.jpg"
+                      alt="the site is opened on a computer"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -270,7 +348,9 @@
                 </div>
 
                 <div class="grid">
-                  <h2 class="portfolio__subtitle">Inspiration has no Borders</h2>
+                  <h2 class="portfolio__subtitle">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="portfolio__text">Веб-сайт</p>
                 </div></a
               >
@@ -284,13 +364,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-7.jpg"
-                    alt="magazine"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/limited/img_lg_@1x_result.jpg 1x, ./images/portfolio/limited/img_lg_@2x_result.jpg 2x, ./images/portfolio/limited/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/limited/img_m_@1x_result.jpg 1x, ./images/portfolio/limited/img_m_@2x_result.jpg 2x, ./images/portfolio/limited/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/limited/img_s_@1x_result.jpg 1x, ./images/portfolio/limited/img_s_@2x_result.jpg 2x, ./images/portfolio/limited/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/limited/img_s_@1x_result.jpg"
+                      alt="magazine"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -313,13 +405,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-8.jpg"
-                    alt="a tag on a string with an inscription in the center of the tag lab el tag"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/lab/img_lg_@1x_result.jpg 1x, ./images/portfolio/lab/img_lg_@2x_result.jpg 2x, ./images/portfolio/lab/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/lab/img_m_@1x_result.jpg 1x, ./images/portfolio/lab/img_m_@2x_result.jpg 2x, ./images/portfolio/lab/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/lab/img_s_@1x_result.jpg 1x, ./images/portfolio/lab/img_s_@2x_result.jpg 2x, ./images/portfolio/lab/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/lab/img_s_@1x_result.jpg"
+                      alt="a tag on a string with an inscription in the center of the tag lab el tag"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -342,13 +446,25 @@
                 rel="noopener noreferrer"
               >
                 <div class="animation">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio-9.jpg"
-                    alt="hands of a witch on the keyboard. the growing business application is open on the laptop monitor. a man tries to enter the application"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/growing/img_lg_@1x_result.jpg 1x, ./images/portfolio/growing/img_lg_@2x_result.jpg 2x, ./images/portfolio/growing/img_lg_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/growing/img_m_@1x_result.jpg 1x, ./images/portfolio/growing/img_m_@2x_result.jpg 2x, ./images/portfolio/growing/img_m_@3x_result.jpg 3x"
+                    ></source>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/growing/img_s_@1x_result.jpg 1x, ./images/portfolio/growing/img_s_@2x_result.jpg 2x, ./images/portfolio/growing/img_s_@3x_result.jpg 3x"
+                    ></source>
+                    <img
+                      class="img"
+                      src="./images/portfolio/growing/img_s_@1x_result.jpg"
+                      alt="hands of a witch on the keyboard. the growing business application is open on the laptop monitor. a man tries to enter the application"
+                    />
+                  </picture>
                   <p class="animation__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -371,14 +487,14 @@
       <div class="container container-footer--disp-ai">
         <!-- ADDRESSES -->
         <div class="footer-container">
-          <a href="index.html" class=" logo ooter-logo--margin-bottom-disp">
+          <a href="index.html" class="logo ooter-logo--margin-bottom-disp">
             Web<span class="footer-logo-text">Studio</span></a
           >
           <address class="add">
-            <ul class="addres ">
+            <ul class="addres">
               <li class="addres__item">
                 <a
-                  class="addres__link "
+                  class="addres__link"
                   href="https://goo.gl/maps/jSmhhcKhxzTKLF239"
                   target="_blank"
                   rel="noopener norreferer"
@@ -388,14 +504,14 @@
 
               <li class="addres__item">
                 <a
-                  class="addres__contacts-link "
+                  class="addres__contacts-link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
 
               <li class="addres__item">
-                <a class="addres__contacts-link " href="tel:+380961111111"
+                <a class="addres__contacts-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -471,7 +587,10 @@
               />
             </label>
           </div>
-          <button class="btn btn-footer--g btn-footer--shadow btn-footer--w200-h50-p" type="submit">
+          <button
+            class="btn btn-footer--g btn-footer--shadow btn-footer--w200-h50-p"
+            type="submit"
+          >
             Підписатися
             <svg class="btn-svg" width="24" height="24">
               <use class="footer-svg" href="./images/svg/icons.svg#send"></use>

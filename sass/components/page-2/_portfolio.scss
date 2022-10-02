@@ -12,6 +12,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - var(--card-gap) * 2) / 3);
+    height: 404px;
   }
 }
 

@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/hero/img_s_@1x_result.jpg);
+    url(../images/hero/img_s_@1x_result.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -24,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/Img_s_@2x_result.jpg);
+      url(../images/hero/Img_s_@2x_result.jpg);
   }
 
   @media (min-device-pixel-ratio: 3),
@@ -35,7 +35,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/Img_s_@3x_result.jpg);
+      url(../images/hero/Img_s_@3x_result.jpg);
   }
 
   @media screen and (min-width: 480px) {
@@ -46,7 +46,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/img_m_@1x_result.jpg);
+      url(../images/hero/img_m_@1x_result.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -55,7 +55,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/Img_m_@2x_result.jpg);
+        url(../images/hero/Img_m_@2x_result.jpg);
     }
 
     @media (min-device-pixel-ratio: 3),
@@ -66,7 +66,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/Img_m_@3x_result.jpg);
+        url(../images/hero/Img_m_@3x_result.jpg);
     }
     padding-bottom: 198px;
   }
@@ -78,7 +78,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/img_lg_@1x_result.jpg);
+      url(../images/hero/img_lg_@1x_result.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -87,7 +87,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/Img_lg_@2x_result.jpg);
+        url(../images/hero/Img_lg_@2x_result.jpg);
     }
 
     @media (min-device-pixel-ratio: 3),
@@ -98,7 +98,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/Img_lg_@3x_result.jpg);
+        url(../images/hero/Img_lg_@3x_result.jpg);
     }
   }
 }
