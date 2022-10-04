@@ -26,14 +26,25 @@
   </head>
   <body class="body">
     <!-- HEADER -->
-    <header class="header">
+    <header class="header block">
       <!-- NAV HEADER -->
       <div class="conteainer header__container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+          <svg width='40' height="40">
+            <use href="./images/svg/icons.svg#menu_40px">
+
+            </use>
+          </svg>
+        </button>
+          
         <nav class="nav">
           <a href="index.html" class="logo logo__header"
             >Web<span class="logo__text">Studio</span></a
           >
-
           <ul class="site-nav">
             <li class="site-nav__item">
               <a
@@ -56,7 +67,7 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon icon" width="16" height="12">
+              <svg class="contacts__icon icon contacts__icon--gorizontal">
                 <use href="./images/svg/icons.svg#mail"></use>
               </svg>
               info@devstudio.com</a
@@ -65,7 +76,7 @@
 
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon icon" width="10" height="16">
+              <svg class="contacts__icon icon contacts__icon--vertikal">
                 <use href="./images/svg/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -744,7 +755,7 @@
       <div class="container container-footer--disp-ai">
         <!-- ADDRESSES -->
         <div class="footer-container">
-          <a href="index.html" class="logo ooter-logo--margin-bottom-disp">
+          <a href="index.html" class="logo footer-logo--margin-bottom-disp">
             Web<span class="footer-logo-text">Studio</span></a
           >
           <address class="add">
@@ -971,6 +982,38 @@
       </div>
     </div>
 
+    <!-- BURGER MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/svg/icons.svg#close_40px"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav">
+        <li><a href="" class="menu__nav-link">Студія</a></li>
+        <li><a href="" class="menu__nav-link">Портфоліо</a></li>
+        <li><a href="" class="menu__nav-link">Контакти</a></li>
+      </ul>
+      <ul class="menu-contacts">
+        <li><a href="mailto:info@devstudio.com" class="menu-contacts__link">+38 096 111 11 11</a></li>
+        <li><a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link--outher-size">info@devstudio.com</a></li>
+      </ul>
+      <ul class="menu-socials">
+        <li><a href="" class="menu-socials__link menu-socials__link--after">Instagram</a></li>
+        <li><a href="" class="menu-socials__link menu-socials__link--after">Twitter</a></li>
+        <li><a href="" class="menu-socials__link menu-socials__link--after">Facebook</a></li>
+        <li><a href="" class="menu-socials__link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

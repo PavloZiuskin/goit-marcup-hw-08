@@ -1,5 +1,16 @@
 .add {
   display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  
+
+
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 0;
+  }
 }
 
 .addres__item:not(:last-child) {
@@ -14,10 +25,10 @@
   color: var(--footer-rgba-coor);
   transition: color var(--animation-fast);
 
-    &:hover,
-    &:focus {
-        color: var(--acsent-text-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--acsent-text-color);
+  }
 }
 
 .addres__link {
@@ -27,8 +38,8 @@
   letter-spacing: 0.03em;
   color: var(--white-text-color);
   transition: color var(--animation-fast);
-    &:hover,
-    &:focus {
-        color: var(--acsent-text-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--acsent-text-color);
+  }
 }
