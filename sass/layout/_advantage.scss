@@ -1,27 +1,19 @@
 .advantage {
-  min-width: 320px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--card-gap);
-    width: 738px;
-  }
+  display: flex;
+  gap: var(--card-gap);
+  flex-wrap: wrap;
 
   @media screen and (min-width: 1200px) {
-    width: 1170px;
     flex-wrap: nowrap;
   }
 }
 
 .advantage__item {
   text-align: center;
+  
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - var(--card-gap)) / 2);
@@ -47,7 +39,6 @@
 
 .advantage__container {
   display: flex;
-  // width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -57,7 +48,6 @@
 
   
   @media screen and (min-wigth: 768px) {
-    width: 354px;
   }
 
   @media screen and (min-wigth: 1200px) {
@@ -70,6 +60,7 @@
 .advantage__text {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
 
   font-weight: 400;
   line-height: calc(24 / 14);

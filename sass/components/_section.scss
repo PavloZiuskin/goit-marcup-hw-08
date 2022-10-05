@@ -2,6 +2,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -12,11 +14,14 @@
 }
 .section--no-padding-top {
   padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
-
+  margin-bottom: 30px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -29,6 +34,7 @@
   letter-spacing: 0.03em;
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: calc(42 / 36);
   }
