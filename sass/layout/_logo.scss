@@ -41,12 +41,6 @@
 .footer-logo--margin-bottom-disp {
   margin-bottom: 20px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 0;
-  }
 }
 
 .footer-logo-text {

@@ -272,13 +272,6 @@ svg {
 .footer-logo--margin-bottom-disp {
   margin-bottom: 20px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (min-width: 1200px) {
-  .footer-logo--margin-bottom-disp {
-    margin-left: 0;
-  }
 }
 
 .footer-logo-text {
@@ -967,40 +960,36 @@ svg {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-footer--disp-ai {
     align-items: baseline;
     flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
 .footer-container {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    margin-right: 165px;
-    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
     margin-right: 70px;
+    flex-grow: 1;
   }
 }
 
 .add {
   display: block;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .add {
@@ -1039,16 +1028,8 @@ svg {
 
 .socialyti-container {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
   margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .socialyti-container {
-    margin-left: 0;
-    margin-right: auto;
-  }
 }
 @media screen and (min-width: 1200px) {
   .socialyti-container {
@@ -1076,8 +1057,6 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: auto;
-    margin-right: 155px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1085,8 +1064,6 @@ svg {
     align-items: flex-end;
     gap: 12px;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1419,6 +1396,7 @@ svg {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   gap: var(--card-gap);
 }
 
@@ -1433,7 +1411,6 @@ svg {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     flex-basis: calc((100% - var(--card-gap) * 2) / 3);
-    height: 404px;
   }
 }
 
@@ -1509,14 +1486,4 @@ svg {
   border-right: 1px solid var(--main-border-color);
   border-bottom: 1px solid var(--main-border-color);
   text-align: left;
-}
-@media screen and (min-width: 768px) {
-  .grid {
-    height: 146px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .grid {
-    height: 110px;
-  }
 }/*# sourceMappingURL=main.css.map */
