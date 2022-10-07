@@ -128,7 +128,7 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1199px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -155,6 +155,7 @@ svg {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   margin: 0 auto;
   box-shadow: 0px 4px 4px var(--main-box-shadow);
   border-radius: 4px;
@@ -195,10 +196,6 @@ svg {
 .btn-footer--w200-h50-p {
   width: 200px;
   height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 28px;
 }
 
 .btn-footer--shadow {
@@ -798,11 +795,6 @@ svg {
 .team {
   display: block;
 }
-@media screen and (min-width: 480px) {
-  .team {
-    gap: var(--card-gap);
-  }
-}
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
@@ -813,9 +805,16 @@ svg {
 
 .team__item {
   width: 100%;
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px var(--second-box-shadow), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -1356,13 +1355,19 @@ svg {
 .filter {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
