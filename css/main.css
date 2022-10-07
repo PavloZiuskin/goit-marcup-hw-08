@@ -1401,7 +1401,6 @@ svg {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   gap: var(--card-gap);
 }
 
@@ -1424,6 +1423,13 @@ svg {
   text-decoration: none;
   overflow: hidden;
   transition: box-shadow var(--animation-fast);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px var(--second-box-shadow), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1491,4 +1497,5 @@ svg {
   border-right: 1px solid var(--main-border-color);
   border-bottom: 1px solid var(--main-border-color);
   text-align: left;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
