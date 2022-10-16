@@ -26,12 +26,12 @@
   height: 100%;
   object-fit: contain;
   transition: fill var(--animation-fast);
-    .btn-close:hover
-        > .btn-close__cross
-        &
-        .btn-close:focus
-        > .btn-close__cross
-        & {
-        fill: var(--main-btn-bgc);
-    }
+  .btn-close:hover
+    > .btn-close__cross
+    &
+    .btn-close:focus
+    > .btn-close__cross
+    & {
+    fill: var(--main-btn-bgc);
+  }
 }
